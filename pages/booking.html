@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đặt lịch chụp ảnh và gửi yêu cầu tư vấn trực tuyến.">
+    <title>Đặt lịch | Ánh Sáng Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dist/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">A</span>
+                <span>Ánh Sáng Studio</span>
+            </a>
+            <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav">
+                <a href="../index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="services.html">Dịch vụ</a>
+                <a href="pricing.html">Bảng giá</a>
+                <a href="booking.html" class="active">Đặt lịch</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Đặt lịch</p>
+                <h1>Gửi yêu cầu chụp ảnh và chúng tôi sẽ liên hệ lại sớm nhất.</h1>
+            </div>
+        </section>
+
+        <!--
+        ═══════════════════════════════════════════════════════════════════════════
+        TASK CHO NGÂN - BOOKING FORM / VALIDATION
+        ═══════════════════════════════════════════════════════════════════════════
+        Đây là phần của Ngân. Mục tiêu là làm form đặt lịch chuyên nghiệp và có validate đầy đủ.
+
+        Phần này phải làm:
+        - Form booking: họ tên, email, phone, service, date, message
+        - Validate input trước khi submit
+        - Lưu dữ liệu vào localStorage
+        - Nút submit đổi trạng thái sang "Đã gửi"
+
+        KHÔNG LÀM:
+        - Không sửa gallery, homepage, pricing
+        - Không làm form contact ở đây
+        - Đạt giữ vai trò leader, không gánh phần thực hiện chính của task này
+
+        Dùng id bookingForm để JS xử lý chung với contact form.
+        ═══════════════════════════════════════════════════════════════════════════
+        -->
+        <section class="section">
+            <div class="container booking-grid">
+                <form class="contact-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input id="name" name="name" type="text" placeholder="TODO: Nhập tên của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="TODO: email@example.com" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">TODO: Gửi yêu cầu</button>
+                </form>
+                <aside class="info-card">
+                    <h3>Thông tin liên hệ</h3>
+                    <ul class="check-list">
+                        <li>TODO: Hotline</li>
+                        <li>TODO: Email</li>
+                        <li>TODO: Địa chỉ</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© <span id="year"></span> Ánh Sáng Studio. Mọi quyền được bảo lưu.</p>
+            <div class="footer-links">
+                <a href="contact.html">Liên hệ</a>
+                <a href="booking.html">Đặt lịch</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+</html>

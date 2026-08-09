@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá các bộ sưu tập ảnh nổi bật của Ánh Sáng Studio.">
+    <title>Portfolio | Ánh Sáng Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dist/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">A</span>
+                <span>Ánh Sáng Studio</span>
+            </a>
+            <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav">
+                <a href="../index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="services.html">Dịch vụ</a>
+                <a href="pricing.html">Bảng giá</a>
+                <a href="booking.html">Đặt lịch</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Portfolio</p>
+                <h1>Những bức ảnh kể chuyện và làm nổi bật vẻ đẹp của từng khoảnh khắc.</h1>
+            </div>
+        </section>
+
+        <!--
+        ═══════════════════════════════════════════════════════════════════════════
+        TASK CHO QUỲNH - PORTFOLIO / FILTER / LIGHTBOX
+        ═══════════════════════════════════════════════════════════════════════════
+        Đây là phần của Quỳnh. Mục tiêu là làm gallery portfolio đẹp, sạch và có chức năng lọc.
+
+        Phần này phải làm:
+        - 1 hàng filter button: Tất cả / Cưới / Chân dung / Sự kiện / Sản phẩm
+        - Grid ảnh 3 cột trên desktop
+        - Mỗi ảnh có data-lightbox để JS mở modal lớn
+        - Modal lightbox có nút đóng, prev, next
+
+        KHÔNG LÀM:
+        - Không sửa homepage, navbar, pricing, booking, contact
+        - Không dùng layout quá tối, quá rối
+
+        Dùng class portfolio-card, filter-btn, lightbox đã có sẵn trong CSS.
+        ═══════════════════════════════════════════════════════════════════════════
+        -->
+        <section class="section">
+            <div class="container">
+                <div class="filter-buttons" aria-label="Bộ lọc ảnh">
+                    <button class="filter-btn active" type="button" data-filter="all">TODO</button>
+                    <button class="filter-btn" type="button" data-filter="wedding">Cưới</button>
+                    <button class="filter-btn" type="button" data-filter="portrait">Chân dung</button>
+                    <button class="filter-btn" type="button" data-filter="event">Sự kiện</button>
+                    <button class="filter-btn" type="button" data-filter="product">Sản phẩm</button>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-card" data-category="wedding">
+                        <img src="../images/image_1.jpg" alt="Ảnh mẫu" data-lightbox="../images/image_1.jpg">
+                        <div class="portfolio-card-content">
+                            <h3>Portfolio Item</h3>
+                            <p>Người 2 viết lại gallery item đúng phong cách mẫu.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox hidden" aria-hidden="true" role="dialog" aria-modal="true">
+        <button type="button" id="closeLightbox" class="lightbox-close" aria-label="Đóng ảnh lớn">×</button>
+        <button type="button" id="prevImage" class="lightbox-nav prev" aria-label="Ảnh trước">‹</button>
+        <img id="lightboxImage" src="" alt="Ảnh lớn" />
+        <button type="button" id="nextImage" class="lightbox-nav next" aria-label="Ảnh tiếp theo">›</button>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© <span id="year"></span> Ánh Sáng Studio. Mọi quyền được bảo lưu.</p>
+            <div class="footer-links">
+                <a href="contact.html">Liên hệ</a>
+                <a href="booking.html">Đặt lịch</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

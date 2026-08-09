@@ -1,0 +1,15 @@
+{
+  "name": "wedding-photography-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./css/dist/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./css/dist/output.css",
+    "serve": "npx http-server . -p 8080"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.3.3"
+  }
+}

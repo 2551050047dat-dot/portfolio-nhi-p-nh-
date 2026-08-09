@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thông tin liên hệ và địa chỉ của Ánh Sáng Studio.">
+    <title>Liên hệ | Ánh Sáng Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dist/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark">A</span>
+                <span>Ánh Sáng Studio</span>
+            </a>
+            <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav">
+                <a href="../index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="services.html">Dịch vụ</a>
+                <a href="pricing.html">Bảng giá</a>
+                <a href="booking.html">Đặt lịch</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Liên hệ</p>
+                <h1>Hãy kết nối với chúng tôi để bắt đầu hành trình tạo nên những bức ảnh đẹp.</h1>
+            </div>
+        </section>
+
+        <!--
+        ═══════════════════════════════════════════════════════════════════════════
+        TASK CHO ĐẠT - CONTACT FORM / TƯ VẤN
+        ═══════════════════════════════════════════════════════════════════════════
+        Đây là phần của Đạt. Mục tiêu là làm form liên hệ cho khách hàng gửi yêu cầu tư vấn.
+
+        Phần này phải làm:
+        - Form contact: họ tên, email, phone, message
+        - Validate input đúng định dạng
+        - Hiển thị thông tin studio cạnh form
+        - Kết nối với cùng JS validation như booking form
+
+        KHÔNG LÀM:
+        - Không sửa homepage, navbar, portfolio, pricing
+        - Không làm booking ở đây
+
+        Dùng id contactForm để JS xử lý chung.
+        ═══════════════════════════════════════════════════════════════════════════
+        -->
+        <section class="section">
+            <div class="container contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Họ và tên</label>
+                        <input id="contactName" name="name" type="text" placeholder="TODO: Nhập tên của bạn" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">TODO: Gửi tin nhắn</button>
+                </form>
+
+                <div class="info-card">
+                    <h3>Thông tin</h3>
+                    <ul class="check-list">
+                        <li>TODO: Địa chỉ</li>
+                        <li>TODO: Điện thoại</li>
+                        <li>TODO: Email</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© <span id="year"></span> Ánh Sáng Studio. Mọi quyền được bảo lưu.</p>
+            <div class="footer-links">
+                <a href="booking.html">Đặt lịch</a>
+                <a href="contact.html">Liên hệ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+</html>
