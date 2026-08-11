@@ -1,5 +1,5 @@
 /*
- * TASK 3 - Ngân: Pricing / Calculator / Form logic
+ * TASK 3 - Quynh: Pricing / Calculator / Form logic
  * Mục tiêu:
  * - Cho user tính tiền gói chụp dựa trên addon và base package.
  * - Giữ layout rõ, premium nhưng dễ hiểu.
