@@ -1,0 +1,49 @@
+@media (max-width: 900px) {
+    .hero-grid,
+    .story-grid,
+    .booking-grid,
+    .contact-grid,
+    .portfolio-grid,
+    .pricing-grid,
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box,
+    .footer-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 760px) {
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(6, 7, 11, 0.96);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 1rem;
+        display: none;
+        min-width: 180px;
+    }
+
+    .site-nav.open {
+        display: flex;
+    }
+
+    .hero {
+        padding-top: 3rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+    }
+}
