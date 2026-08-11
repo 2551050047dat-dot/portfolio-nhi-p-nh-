@@ -40,14 +40,6 @@ Website dịch vụ nhiếp ảnh đám cưới với giao diện hiện đại,
 └─ .gitignore
 ```
 
-## Cách chạy dự án
-```bash
-npm install
-npm run dev
-```
-
-Sau đó mở trình duyệt tại localhost đang được http-server hoặc dùng Live Server trong VS Code.
-
 ## Tính năng chính
 - Portfolio filter theo chủ đề
 - Lightbox modal để xem ảnh lớn
@@ -56,19 +48,5 @@ Sau đó mở trình duyệt tại localhost đang được http-server hoặc d
 - Responsive layout ở 3 breakpoint
 - CTA và thông tin studio rõ ràng
 
-## Phân công 3 thành viên
-| Thành viên | Nhiệm vụ |
-| --- | --- |
-| Thành viên 1 | Home, About, Design System, HTML semantic |
-| Thành viên 2 | Portfolio, Gallery Filter, Lightbox, responsive |
-| Thành viên 3 | Booking form, Pricing, README, validation, localStorage |
 
-## Nhật ký commit
-- 2026-08-09: Khởi tạo cấu trúc dự án và chuẩn hóa layout
-- 2026-08-09: Thêm Tailwind v4 design tokens và cấu hình build
-- 2026-08-09: Hoàn thiện portfolio filter và lightbox
-- 2026-08-09: Hoàn thiện booking form validation và pricing calculator
-- 2026-08-09: Chuẩn bị README và review hiệu năng
 
-## Lưu ý
-Dự án này được xây dựng theo chuẩn thiết kế web hiện đại, hướng tới yêu cầu của bài tập lớn và tối ưu cho đánh giá của giảng viên.
