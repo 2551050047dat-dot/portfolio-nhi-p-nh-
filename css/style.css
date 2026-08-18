@@ -505,7 +505,10 @@ iframe {
     display: flex;
     gap: 1rem;
 }
+
+
 <!--    NGAN    --->
+
 .featured-services {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -658,4 +661,23 @@ iframe {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+.booking-grid .contact-form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking-grid .info-card {
+    width: 100%;
+    box-sizing: border-box;
 }
