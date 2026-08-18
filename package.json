@@ -1,15 +1,12 @@
 {
-  "name": "wedding-photography-website",
-  "version": "1.0.0",
+  "name": "tessa-morgan-wedding-photographer",
+  "version": "2.0.0",
   "private": true,
+  "description": "D12 - Portfolio nhiep anh cuoi | Tessa Morgan - Wedding Photographer",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./css/dist/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./css/dist/output.css",
-    "serve": "npx http-server . -p 8080"
+    "serve": "npx http-server . -p 8080 -c-1"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.3.3",
-    "http-server": "^14.1.1",
-    "tailwindcss": "^4.3.3"
+    "http-server": "^14.1.1"
   }
 }

@@ -3,103 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Các gói dịch vụ nhiếp ảnh chuyên nghiệp của Ánh Sáng Studio.">
-    <title>Dịch vụ | Ánh Sáng Studio</title>
+    <meta name="description" content="Dịch vụ & bảng giá của Tessa Morgan — Wedding Photographer: 4 gói Photography Package từ $399 đến $2999 và giải đáp thắc mắc thường gặp.">
+    <title>Dịch vụ &amp; Bảng giá | Tessa Morgan</title>
 
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2748%27 fill=%27%232f2a26%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27%23c9a26b%27 font-family=%27Georgia,serif%27%3ETM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+    <!-- ===== Header & Navigation (đồng bộ toàn site) ===== -->
     <header class="site-header">
         <div class="container nav-wrap">
             <a class="brand" href="../index.html">
-                <span class="brand-mark">A</span>
-                <span>Ánh Sáng Studio</span>
+                <span class="brand-name">Tessa Morgan</span>
+                <span class="brand-tagline">Wedding Photographer</span>
             </a>
-            <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
-            <nav class="site-nav">
+            <nav class="site-nav" aria-label="Điều hướng chính">
                 <a href="../index.html">Trang chủ</a>
+                <a href="portfolio.html">Bộ sưu tập</a>
+                <a href="services.html">Dịch vụ &amp; Bảng giá</a>
                 <a href="about.html">Giới thiệu</a>
-                <a href="services.html" class="active">Dịch vụ</a>
-                <a href="pricing.html">Bảng giá</a>
-                <a href="booking.html">Đặt lịch</a>
+                <a href="blog.html">Blog</a>
                 <a href="contact.html">Liên hệ</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="page-hero">
+    <main id="main">
+        <!-- ===== Bảng giá 4 gói ===== -->
+        <section class="section">
             <div class="container">
-                <p class="eyebrow">Dịch vụ</p>
-                <h1>Từng dịch vụ được thiết kế để đáp ứng hoàn hảo nhu cầu của bạn.</h1>
+                <div class="section-head reveal">
+                    <p class="eyebrow">Dịch vụ &amp; Bảng giá</p>
+                    <h2>Photography Packages</h2>
+                    <p>Bốn gói chụp được thiết kế cho từng chặng của câu chuyện — bấm "Book Now" để đặt lịch với gói được điền sẵn.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Gói $399 -->
+                    <article class="price-card reveal">
+                        <span class="price-name">Photography Package</span>
+                        <p class="price-tag">$399</p>
+                        <p class="price-sub">Mini Session — 2 giờ</p>
+                        <ul class="price-features">
+                            <li>1 nhiếp ảnh gia, 1 địa điểm</li>
+                            <li>Phù hợp đính hôn &amp; chân dung</li>
+                            <li>50 ảnh chỉnh màu tinh tế</li>
+                            <li>Album online chia sẻ được</li>
+                            <li>Giao ảnh trong 7 ngày</li>
+                        </ul>
+                        <a class="btn btn-outline" href="contact.html?package=PHOTOGRAPHY%20PACKAGE%20399">Book Now</a>
+                    </article>
+
+                    <!-- Gói $799 -->
+                    <article class="price-card reveal reveal-delay-1">
+                        <span class="price-name">Photography Package</span>
+                        <p class="price-tag">$799</p>
+                        <p class="price-sub">Elopement — nửa ngày</p>
+                        <ul class="price-features">
+                            <li>1 nhiếp ảnh gia, 4 giờ chụp</li>
+                            <li>Lễ cưới thân mật dưới 20 khách</li>
+                            <li>150 ảnh chỉnh màu tinh tế</li>
+                            <li>Album online + bộ ảnh in 10 tấm</li>
+                            <li>Giao ảnh trong 14 ngày</li>
+                        </ul>
+                        <a class="btn btn-outline" href="contact.html?package=PHOTOGRAPHY%20PACKAGE%20799">Book Now</a>
+                    </article>
+
+                    <!-- Gói $1999 (nổi bật) -->
+                    <article class="price-card is-featured reveal reveal-delay-2">
+                        <span class="featured-badge">Được chọn nhiều nhất</span>
+                        <span class="price-name">Photography Package</span>
+                        <p class="price-tag">$1999</p>
+                        <p class="price-sub">Full Wedding Day — 8 giờ</p>
+                        <ul class="price-features">
+                            <li>1 nhiếp ảnh gia, trọn ngày cưới</li>
+                            <li>Từ lúc chuẩn bị đến tiệc tối</li>
+                            <li>500+ ảnh chỉnh màu tinh tế</li>
+                            <li>Ảnh xem trước trong 48 giờ</li>
+                            <li>Album online + hộp USB kỷ niệm</li>
+                        </ul>
+                        <a class="btn btn-gold" href="contact.html?package=PHOTOGRAPHY%20PACKAGE%201999">Book Now</a>
+                    </article>
+
+                    <!-- Gói $2999 -->
+                    <article class="price-card reveal reveal-delay-3">
+                        <span class="price-name">Photography Package</span>
+                        <p class="price-tag">$2999</p>
+                        <p class="price-sub">Signature Collection — 10 giờ</p>
+                        <ul class="price-features">
+                            <li>2 nhiếp ảnh gia, 10 giờ chụp</li>
+                            <li>Tặng buổi chụp đính hôn 2 giờ</li>
+                            <li>800+ ảnh chỉnh màu tinh tế</li>
+                            <li>Album in thủ công 30 trang</li>
+                            <li>Ưu tiên giữ lịch mùa cưới</li>
+                        </ul>
+                        <a class="btn btn-outline" href="contact.html?package=PHOTOGRAPHY%20PACKAGE%202999">Book Now</a>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container service-grid">
-                <article class="service-card">
-                    <img src="../images/image_4.webp" alt="Chụp chân dung">
-                    <div class="service-card-content">
-                        <h3>Chụp chân dung</h3>
-                        <p>Phù hợp cho cá nhân, gia đình và doanh nhân với phong cách tự nhiên hoặc thời trang.</p>
+        <!-- ===== FAQ Accordion (điều khiển bởi js/faq.js) ===== -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>Câu hỏi thường gặp</h2>
+                </div>
+
+                <div class="faq-list" id="faq-list">
+                    <div class="faq-item reveal">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            How far in advance should we book your services?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>
+                                <p>Với hôn lễ trọn ngày, tôi khuyên bạn đặt trước 9–12 tháng — các ngày thứ Bảy mùa cưới (tháng 5–10) thường kín lịch sớm nhất. Buổi chụp đính hôn và chân dung linh hoạt hơn, chỉ cần đặt trước 3–4 tuần. Nếu ngày cưới của bạn đã gần kề, cứ nhắn cho tôi — thỉnh thoảng vẫn có lịch trống bất ngờ.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="service-card">
-                    <img src="../images/image_3.webp" alt="Chụp cưới">
-                    <div class="service-card-content">
-                        <h3>Chụp cưới</h3>
-                        <p>Gói dịch vụ bao gồm tư vấn concept, chụp trước lễ, lễ cưới và hậu kỳ chuyên nghiệp.</p>
+
+                    <div class="faq-item reveal">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            Can we customize a photography package to fit your needs?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>
+                                <p>Hoàn toàn được! Bốn gói trên là điểm khởi đầu — bạn có thể thêm giờ chụp, nhiếp ảnh gia thứ hai, buổi chụp đính hôn hoặc album in vào bất kỳ gói nào. Hãy gửi biểu mẫu liên hệ kèm mô tả nhu cầu, tôi sẽ báo giá riêng trong 24 giờ.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="service-card">
-                    <img src="../images/image_5.jpeg" alt="Chụp sự kiện">
-                    <div class="service-card-content">
-                        <h3>Chụp sự kiện</h3>
-                        <p>Đảm bảo mọi moment quan trọng đều được ghi lại với ánh sáng và bố cục đẹp mắt.</p>
+
+                    <div class="faq-item reveal">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            Do you travel for destination weddings?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>
+                                <p>Có — tôi nhận chụp toàn California không tính phí di chuyển, và rất yêu các hôn lễ điểm đến (destination wedding) trong và ngoài nước. Chi phí đi lại &amp; lưu trú sẽ được báo minh bạch ngay trong báo giá đầu tiên.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="service-card">
-                    <img src="../images/image_2.jpg" alt="Chụp kỷ yếu">
-                    <div class="service-card-content">
-                        <h3>Chụp kỷ yếu</h3>
-                        <p>Thiết kế buổi chụp vui tươi, năng động và đầy dấu ấn tuổi trẻ.</p>
+
+                    <div class="faq-item reveal">
+                        <button type="button" class="faq-question" aria-expanded="false">
+                            When will we receive our photos?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>
+                                <p>Bạn sẽ nhận 20–30 ảnh xem trước trong vòng 48 giờ sau hôn lễ. Album hoàn chỉnh được giao trong 4 tuần với gói cưới và 1–2 tuần với buổi chụp đính hôn/chân dung. Mỗi tấm ảnh đều được chỉnh màu thủ công.</p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="service-card">
-                    <img src="../images/image_6.webp" alt="Chụp sản phẩm">
-                    <div class="service-card-content">
-                        <h3>Chụp sản phẩm</h3>
-                        <p>Phù hợp cho thương hiệu, cửa hàng và quảng cáo với hình ảnh tinh tế.</p>
-                    </div>
-                </article>
-                <article class="service-card">
-                    <img src="../images/image_7.jpg" alt="Chỉnh sửa ảnh">
-                    <div class="service-card-content">
-                        <h3>Chỉnh sửa ảnh</h3>
-                        <p>Hỗ trợ retouch chuyên nghiệp để hình ảnh đạt chất lượng tối ưu.</p>
-                    </div>
-                </article>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- ===== Footer (đồng bộ toàn site) ===== -->
     <footer class="site-footer">
-        <div class="container footer-wrap">
-            <p>© <span id="year"></span> Ánh Sáng Studio. Mọi quyền được bảo lưu.</p>
-            <div class="footer-links">
-                <a href="contact.html">Liên hệ</a>
-                <a href="booking.html">Đặt lịch</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Tessa Morgan</span>
+                    <p>Nhiếp ảnh gia cưới tại Santa Monica, California. Nhận chụp toàn bang và điểm đến quốc tế.</p>
+                </div>
+                <div>
+                    <h4>Khám phá</h4>
+                    <ul>
+                        <li><a href="portfolio.html">Bộ sưu tập</a></li>
+                        <li><a href="services.html">Dịch vụ &amp; Bảng giá</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li><a href="mailto:hello@tessamorgan.com">hello@tessamorgan.com</a></li>
+                        <li><a href="tel:+13105550137">+1 (310) 555-0137</a></li>
+                        <li>Santa Monica, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Tessa Morgan Photography.</span>
+                <span>Đ12 — Portfolio nhiếp ảnh cưới</span>
             </div>
         </div>
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/faq.js"></script>
 </body>
 </html>

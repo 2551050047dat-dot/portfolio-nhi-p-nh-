@@ -1,52 +1,85 @@
-@media (max-width: 900px) {
+/* ==========================================================================
+   Tessa Morgan — Wedding Photographer
+   responsive.css : breakpoint cho tablet & mobile
+   ========================================================================== */
 
-    .hero-grid,
-    .story-grid,
-    .booking-grid,
-    .contact-grid,
-    .portfolio-grid,
-    .pricing-grid,
-    .card-grid {
-        grid-template-columns: 1fr;
-    }
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .section { padding: 64px 0; }
 
+  .masonry { columns: 2; }
 
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
 
-    .cta-box,
-    .footer-wrap {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .stats { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-layout { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 760px) {
-    .menu-toggle {
-        display: inline-flex;
-    }
+/* ---------- Mobile (≤ 720px) ---------- */
+@media (max-width: 720px) {
+  .section { padding: 48px 0; }
 
-    .site-nav {
-        position: absolute;
-        top: 100%;
-        right: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-        background: rgba(6, 7, 11, 0.96);
-        border: 1px solid var(--border);
-        border-radius: 1rem;
-        padding: 1rem;
-        display: none;
-        min-width: 180px;
-    }
+  /* Menu mobile: nav trượt xuống dưới header */
+  .menu-toggle { display: flex; }
 
-    .site-nav.open {
-        display: flex;
-    }
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--ivory);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s var(--ease);
+  }
+  .site-nav.is-open { max-height: 420px; }
+  .site-nav a {
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .site-nav a[aria-current="page"] {
+    border-bottom-color: var(--line);
+    background: var(--cream);
+  }
 
-    .hero {
-        padding-top: 3rem;
-    }
+  .hero-inner { padding: 64px 0; }
+  .hero-actions .btn { width: 100%; text-align: center; }
 
-    .hero-stats {
-        flex-direction: column;
-    }
+  .masonry { columns: 1; }
+
+  .grid-2,
+  .grid-3 { grid-template-columns: 1fr; }
+
+  .pricing-grid { grid-template-columns: 1fr; }
+
+  .form-grid { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr; }
+
+  .album-head { flex-direction: column; align-items: flex-start; }
+
+  .lightbox-prev { left: 4px; }
+  .lightbox-next { right: 4px; }
+  .lightbox-close { right: 4px; }
+
+  .scroll-top { right: 16px; bottom: 16px; }
+}
+
+/* ---------- Mobile nhỏ (≤ 420px) ---------- */
+@media (max-width: 420px) {
+  .container { padding: 0 16px; }
+
+  .stats { grid-template-columns: 1fr; }
+
+  .brand-tagline { letter-spacing: 0.2em; }
 }

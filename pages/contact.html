@@ -3,97 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thông tin liên hệ và địa chỉ của Ánh Sáng Studio.">
-    <title>Liên hệ | Ánh Sáng Studio</title>
+    <meta name="description" content="Liên hệ & đặt lịch chụp với Tessa Morgan — Wedding Photographer. Gửi yêu cầu báo giá và kiểm tra ngày trống.">
+    <title>Liên hệ &amp; Đặt lịch | Tessa Morgan</title>
 
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2748%27 fill=%27%232f2a26%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27%23c9a26b%27 font-family=%27Georgia,serif%27%3ETM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+    <!-- ===== Header & Navigation (đồng bộ toàn site) ===== -->
     <header class="site-header">
         <div class="container nav-wrap">
             <a class="brand" href="../index.html">
-                <span class="brand-mark">A</span>
-                <span>Ánh Sáng Studio</span>
+                <span class="brand-name">Tessa Morgan</span>
+                <span class="brand-tagline">Wedding Photographer</span>
             </a>
-            <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
-            <nav class="site-nav">
+            <nav class="site-nav" aria-label="Điều hướng chính">
                 <a href="../index.html">Trang chủ</a>
+                <a href="portfolio.html">Bộ sưu tập</a>
+                <a href="services.html">Dịch vụ &amp; Bảng giá</a>
                 <a href="about.html">Giới thiệu</a>
-                <a href="services.html">Dịch vụ</a>
-                <a href="pricing.html">Bảng giá</a>
-                <a href="booking.html">Đặt lịch</a>
-                <a href="contact.html" class="active">Liên hệ</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Liên hệ</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">Liên hệ</p>
-                <h1>Hãy kết nối với chúng tôi để bắt đầu hành trình tạo nên những bức ảnh đẹp.</h1>
-            </div>
-        </section>
-
-        <!--
-        ═══════════════════════════════════════════════════════════════════════════
-        TASK CHO ĐẠT - CONTACT FORM / TƯ VẤN
-        ═══════════════════════════════════════════════════════════════════════════
-        Đây là phần của Đạt. Mục tiêu là làm form liên hệ cho khách hàng gửi yêu cầu tư vấn.
-
-        Phần này phải làm:
-        - Form contact: họ tên, email, phone, message
-        - Validate input đúng định dạng
-        - Hiển thị thông tin studio cạnh form
-        - Kết nối với cùng JS validation như booking form
-
-        KHÔNG LÀM:
-        - Không sửa homepage, navbar, portfolio, pricing
-        - Không làm booking ở đây
-
-        Dùng id contactForm để JS xử lý chung.
-        ═══════════════════════════════════════════════════════════════════════════
-        -->
+    <main id="main">
         <section class="section">
-            <div class="container contact-grid">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="contactName">Họ và tên</label>
-                        <input id="contactName" name="name" type="text" placeholder="TODO: Nhập tên của bạn" required>
-                    </div>
-                    <button class="btn btn-primary" type="submit">TODO: Gửi tin nhắn</button>
-                </form>
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Liên hệ &amp; Đặt chụp</p>
+                    <h2>Hãy kể cho tôi về ngày của bạn</h2>
+                    <p>Điền biểu mẫu bên dưới — tôi sẽ phản hồi trong vòng 24 giờ kèm báo giá chi tiết và tình trạng lịch trống.</p>
+                </div>
 
-                <div class="info-card">
-                    <h3>Thông tin</h3>
-                    <ul class="check-list">
-                        <li>TODO: Địa chỉ</li>
-                        <li>TODO: Điện thoại</li>
-                        <li>TODO: Email</li>
-                    </ul>
+                <div class="contact-layout">
+                    <!-- ===== Biểu mẫu đặt chụp (validate inline bởi js/contact.js) ===== -->
+                    <form id="contact-form" class="reveal" novalidate>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Tên của bạn" autocomplete="name" required>
+                                <p class="field-error" id="name-error" aria-live="polite"></p>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="ban@email.com" autocomplete="email" required>
+                                <p class="field-error" id="email-error" aria-live="polite"></p>
+                            </div>
+                            <div class="form-field full">
+                                <label for="package">Selected Package</label>
+                                <!-- Tự động chọn theo tham số ?package=... trên URL -->
+                                <select id="package" name="package">
+                                    <option value="">— Chưa chọn gói / cần tư vấn —</option>
+                                    <option value="PHOTOGRAPHY PACKAGE 399">PHOTOGRAPHY PACKAGE — $399</option>
+                                    <option value="PHOTOGRAPHY PACKAGE 799">PHOTOGRAPHY PACKAGE — $799</option>
+                                    <option value="PHOTOGRAPHY PACKAGE 1999">PHOTOGRAPHY PACKAGE — $1999</option>
+                                    <option value="PHOTOGRAPHY PACKAGE 2999">PHOTOGRAPHY PACKAGE — $2999</option>
+                                </select>
+                                <p class="field-error" id="package-error" aria-live="polite"></p>
+                            </div>
+                            <div class="form-field full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Ngày cưới dự kiến, địa điểm, phong cách bạn yêu thích..." required></textarea>
+                                <p class="field-error" id="message-error" aria-live="polite"></p>
+                            </div>
+                            <div class="form-field full">
+                                <button type="submit" class="btn btn-gold">Gửi yêu cầu đặt chụp</button>
+                            </div>
+                        </div>
+                        <p class="form-note">Thông tin của bạn chỉ dùng để phản hồi yêu cầu này và không chia sẻ cho bên thứ ba.</p>
+                    </form>
+
+                    <!-- ===== Thông tin studio ===== -->
+                    <aside class="contact-aside reveal reveal-delay-1">
+                        <h3>Tessa Morgan Studio</h3>
+                        <ul>
+                            <li><strong>Email</strong> hello@tessamorgan.com</li>
+                            <li><strong>Điện thoại</strong> +1 (310) 555-0137</li>
+                            <li><strong>Studio</strong> 2412 Ocean Ave, Santa Monica, CA</li>
+                            <li><strong>Giờ làm việc</strong> Thứ 3 – Thứ 7, 9:00 – 18:00</li>
+                            <li><strong>Phản hồi</strong> Trong vòng 24 giờ làm việc</li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- ===== Footer (đồng bộ toàn site) ===== -->
     <footer class="site-footer">
-        <div class="container footer-wrap">
-            <p>© <span id="year"></span> Ánh Sáng Studio. Mọi quyền được bảo lưu.</p>
-            <div class="footer-links">
-                <a href="booking.html">Đặt lịch</a>
-                <a href="contact.html">Liên hệ</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Tessa Morgan</span>
+                    <p>Nhiếp ảnh gia cưới tại Santa Monica, California. Nhận chụp toàn bang và điểm đến quốc tế.</p>
+                </div>
+                <div>
+                    <h4>Khám phá</h4>
+                    <ul>
+                        <li><a href="portfolio.html">Bộ sưu tập</a></li>
+                        <li><a href="services.html">Dịch vụ &amp; Bảng giá</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li><a href="mailto:hello@tessamorgan.com">hello@tessamorgan.com</a></li>
+                        <li><a href="tel:+13105550137">+1 (310) 555-0137</a></li>
+                        <li>Santa Monica, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Tessa Morgan Photography.</span>
+                <span>Đ12 — Portfolio nhiếp ảnh cưới</span>
             </div>
         </div>
     </footer>
 
     <script src="../js/main.js"></script>
-    <script src="../js/booking.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
