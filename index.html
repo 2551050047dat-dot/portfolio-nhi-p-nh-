@@ -3,219 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio nhiếp ảnh chuyên nghiệp với các dịch vụ chụp chân dung, cưới, sự kiện và sản phẩm.">
-    <title>Ánh Sáng Studio | Photography Portfolio</title>
+    <meta name="description" content="Tessa Morgan — Wedding Photographer. Nhiếp ảnh gia cưới chuyên nghiệp: ảnh cưới, đính hôn và chân dung với phong cách tự nhiên, tinh tế.">
+    <title>Tessa Morgan | Wedding Photographer</title>
 
+    <!-- Fonts: preconnect để giảm thời gian tải -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2748%27 fill=%27%232f2a26%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27%23c9a26b%27 font-family=%27Georgia,serif%27%3ETM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+    <!-- ===== Header & Navigation (đồng bộ toàn site) ===== -->
     <header class="site-header">
         <div class="container nav-wrap">
             <a class="brand" href="index.html">
-                <span class="brand-mark">A</span>
-                <span>Ánh Sáng Studio</span>
+                <span class="brand-name">Tessa Morgan</span>
+                <span class="brand-tagline">Wedding Photographer</span>
             </a>
-            <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
-            <nav class="site-nav">
-                <a href="index.html" class="active">Trang chủ</a>
+            <nav class="site-nav" aria-label="Điều hướng chính">
+                <a href="index.html">Trang chủ</a>
+                <a href="pages/portfolio.html">Bộ sưu tập</a>
+                <a href="pages/services.html">Dịch vụ &amp; Bảng giá</a>
                 <a href="pages/about.html">Giới thiệu</a>
-                <a href="pages/services.html">Dịch vụ</a>
-                <a href="pages/pricing.html">Bảng giá</a>
-                <a href="pages/booking.html">Đặt lịch</a>
+                <a href="pages/blog.html">Blog</a>
                 <a href="pages/contact.html">Liên hệ</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <p class="eyebrow">Portfolio nhiếp ảnh chuyên nghiệp</p>
-                    <h1>Chụp những khoảnh khắc quý giá bằng ánh sáng và cảm xúc.</h1>
-                    <p>Từ chân dung cá nhân, cưới hỏi đến sự kiện và sản phẩm, chúng tôi mang đến hình ảnh đẹp mắt, tự nhiên và đầy cảm hứng.</p>
+    <main id="main">
+        <!-- ===== Hero với hiệu ứng parallax ===== -->
+        <section class="hero" aria-label="Giới thiệu Tessa Morgan">
+            <div class="hero-bg" aria-hidden="true">
+                <!-- Ảnh hero tải sớm (fetchpriority=high), khai báo width/height chống CLS -->
+                <img src="images/image_1.jpg" alt="" width="1125" height="750" fetchpriority="high" decoding="async">
+            </div>
+            <div class="container">
+                <div class="hero-inner">
+                    <p class="eyebrow">Tessa Morgan Photography</p>
+                    <h1>Kể lại ngày cưới của bạn bằng những khung hình chân thật.</h1>
+                    <p>Hơn 10 năm đồng hành cùng các cặp đôi khắp California — từ hôn lễ giữa vườn nho, buổi chụp đính hôn lúc giờ vàng đến những bộ chân dung để đời.</p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="pages/about.html">Tìm hiểu thêm</a>
-                        <a class="btn btn-secondary" href="pages/services.html">Xem dịch vụ</a>
+                        <a class="btn btn-gold" href="pages/portfolio.html">Xem bộ sưu tập</a>
+                        <a class="btn btn-outline" href="pages/contact.html">Đặt lịch chụp</a>
                     </div>
-                </div>
-                <div class="hero-card">
-                    <img src="images/image_1.jpg" alt="Ảnh trang chủ">
                 </div>
             </div>
         </section>
 
-        <!--
-        ═══════════════════════════════════════════════════════════════════════════
-        TASK CHO NGÂN - HOMEPAGE / HERO / SECTION CONTENT
-        ═══════════════════════════════════════════════════════════════════════════
-        Đây là phần của Ngân. Mục tiêu là làm tiếp phần homepage sau hero.
-        Bắt buộc phải giữ tone warm premium của website: nền beige, chữ nâu, accent vàng nâu.
-
-        Phần này phải làm:
-        - Dịch vụ nổi bật: 4 card
-        - Story section: 2 khối giới thiệu
-        - CTA cuối section
-        - Button dùng class btn btn-primary / btn-secondary
-
-        KHÔNG LÀM:
-        - Không chạm header, hero, navbar
-        - Không sửa gallery, pricing, booking, contact
-        - Không đổi màu theme tổng thể
-
-        Nếu cần, copy lại style hiện có từ file css/style.css để giữ giao diện giống bài gốc.
-        ═══════════════════════════════════════════════════════════════════════════
-        -->
-
-
-<section class="section story-section">
-    <div class="container">
-        <div class="story-grid">
-
-            <div class="story-image">
-                <img src="images/image_1.jpg" alt="Khoảnh khắc nhiếp ảnh">
+        <!-- ===== Album nổi bật ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Bộ sưu tập</p>
+                    <h2>Những câu chuyện gần đây</h2>
+                    <p>Mỗi album là một ngày trọng đại được kể lại trọn vẹn — chọn một câu chuyện để bắt đầu.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card reveal">
+                        <a href="pages/album-detail.html?album=amelia-james-vineyard" aria-label="Xem album Amelia và James — Vineyard Wedding">
+                            <div class="img-frame frame-3x2">
+                                <img src="images/image_1.jpg" alt="Hôn lễ của Amelia và James giữa vườn nho Napa Valley" width="1125" height="750" loading="lazy" decoding="async">
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <span class="card-meta">Wedding</span>
+                            <h3><a href="pages/album-detail.html?album=amelia-james-vineyard">Amelia &amp; James — Vineyard Wedding</a></h3>
+                            <p>Hôn lễ ngập nắng giữa vườn nho Napa Valley.</p>
+                        </div>
+                    </article>
+                    <article class="card reveal reveal-delay-1">
+                        <a href="pages/album-detail.html?album=harper-liam-golden-hour" aria-label="Xem album Harper và Liam — Golden Hour Engagement">
+                            <div class="img-frame frame-3x2">
+                                <img src="images/image_5.jpeg" alt="Buổi chụp đính hôn giờ vàng của Harper và Liam trên đồi Malibu" width="1024" height="683" loading="lazy" decoding="async">
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <span class="card-meta">Engagement</span>
+                            <h3><a href="pages/album-detail.html?album=harper-liam-golden-hour">Harper &amp; Liam — Golden Hour</a></h3>
+                            <p>Buổi chụp đính hôn lúc giờ vàng trên đồi Malibu.</p>
+                        </div>
+                    </article>
+                    <article class="card reveal reveal-delay-2">
+                        <a href="pages/album-detail.html?album=isabella-bridal-portrait" aria-label="Xem album Isabella — Bridal Portrait Session">
+                            <div class="img-frame frame-3x2">
+                                <img src="images/image_4.webp" alt="Chân dung cô dâu Isabella bên khung cửa sổ studio" width="1698" height="2560" loading="lazy" decoding="async">
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <span class="card-meta">Portrait</span>
+                            <h3><a href="pages/album-detail.html?album=isabella-bridal-portrait">Isabella — Bridal Portraits</a></h3>
+                            <p>Bộ chân dung cô dâu với ánh sáng cửa sổ tự nhiên.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="story-content">
-                <p class="eyebrow">Câu chuyện của chúng tôi</p>
-
-                <h2>Không chỉ chụp ảnh, chúng tôi lưu giữ cảm xúc.</h2>
-
-                <p>
-                    Với chúng tôi, một bức ảnh đẹp không chỉ nằm ở ánh sáng
-                    hay bố cục mà còn nằm ở cảm xúc phía sau khoảnh khắc ấy.
-                    Mỗi buổi chụp là một câu chuyện riêng cần được lắng nghe
-                    và kể lại bằng hình ảnh.
-                </p>
-
-                <p>
-                    Từ những khoảnh khắc đời thường đến những dấu mốc quan trọng,
-                    Ánh Sáng Studio hướng đến phong cách nhiếp ảnh tự nhiên,
-                    tinh tế và mang dấu ấn riêng của từng khách hàng.
-                </p>
-
-                <a href="pages/about.html" class="btn btn-secondary">
-                    Về chúng tôi
-                </a>
+        <!-- ===== Số liệu ===== -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="stats reveal">
+                    <div class="stat"><strong>200+</strong><span>Hôn lễ đã chụp</span></div>
+                    <div class="stat"><strong>10</strong><span>Năm kinh nghiệm</span></div>
+                    <div class="stat"><strong>48h</strong><span>Ảnh xem trước</span></div>
+                    <div class="stat"><strong>100%</strong><span>Khách hàng hài lòng</span></div>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </div>
-</section>
-
-    
-
-<section class="section featured-services">
-    <div class="container">
-
-        <div class="section-heading">
-            <p class="eyebrow">Dịch vụ</p>
-            <h2>Những khoảnh khắc đáng được lưu giữ</h2>
-            <p>
-                Ánh Sáng Studio mang đến những trải nghiệm nhiếp ảnh
-                tự nhiên, tinh tế và phù hợp với từng câu chuyện riêng.
-            </p>
-        </div>
-
-        <div class="services-grid">
-
-            <article class="service-card">
-                <div class="service-number">01</div>
-                <h3>Chụp chân dung</h3>
-                <p>
-                    Ghi lại vẻ đẹp và cá tính riêng của bạn qua những
-                    khung hình tự nhiên, tinh tế và đầy cảm xúc.
-                </p>
-                <a href="pages/services.html" class="service-link">
-                    Xem dịch vụ →
-                </a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-number">02</div>
-                <h3>Chụp cưới</h3>
-                <p>
-                    Lưu giữ những khoảnh khắc đáng nhớ của ngày trọng đại
-                    bằng phong cách nhẹ nhàng, chân thật và giàu cảm xúc.
-                </p>
-                <a href="pages/services.html" class="service-link">
-                    Xem dịch vụ →
-                </a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-number">03</div>
-                <h3>Chụp sự kiện</h3>
-                <p>
-                    Bắt trọn những khoảnh khắc nổi bật và không khí đặc biệt
-                    trong các sự kiện, chương trình và buổi gặp gỡ.
-                </p>
-                <a href="pages/services.html" class="service-link">
-                    Xem dịch vụ →
-                </a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-number">04</div>
-                <h3>Chụp sản phẩm</h3>
-                <p>
-                    Tạo nên những hình ảnh sản phẩm chuyên nghiệp,
-                    nổi bật vẻ đẹp và giá trị của từng sản phẩm.
-                </p>
-                <a href="pages/services.html" class="service-link">
-                    Xem dịch vụ →
-                </a>
-            </article>
-
-        </div>
-
-    </div>
-</section>
-
-
-<section class="section cta-section">
-    <div class="container">
-        <div class="cta-box">
-
-            <p class="eyebrow">Bắt đầu câu chuyện của bạn</p>
-
-            <h2>Sẵn sàng lưu giữ khoảnh khắc đặc biệt?</h2>
-
-            <p>
-                Hãy để Ánh Sáng Studio đồng hành cùng bạn và biến
-                những khoảnh khắc đáng nhớ thành những hình ảnh
-                có giá trị theo thời gian.
-            </p>
-
-            <div class="cta-actions">
-                <a href="pages/booking.html" class="btn btn-primary">
-                    Đặt lịch ngay
-                </a>
-
-                <a href="pages/contact.html" class="btn btn-secondary">
-                    Liên hệ với chúng tôi
-                </a>
+        <!-- ===== Giới thiệu ngắn ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="align-items: center;">
+                    <div class="img-frame frame-3x2 reveal">
+                        <img src="images/image_3.webp" alt="Tessa Morgan đang tác nghiệp tại một hôn lễ ngoài trời" width="2048" height="1365" loading="lazy" decoding="async">
+                    </div>
+                    <div class="reveal reveal-delay-1">
+                        <p class="eyebrow">Về Tessa</p>
+                        <h2>Xin chào, tôi là Tessa Morgan.</h2>
+                        <p>Tôi tin rằng những bức ảnh cưới đẹp nhất không đến từ dàn dựng mà từ những khoảnh khắc thật: cái siết tay của bố trước giờ lễ, tiếng cười vỡ òa khi nhẫn suýt rơi, ánh mắt hai người trao nhau khi nghĩ rằng không ai nhìn thấy.</p>
+                        <p>Phong cách của tôi là phóng sự tự nhiên pha nét điện ảnh — ánh sáng ấm, màu phim và cảm xúc nguyên bản.</p>
+                        <a class="btn btn-primary" href="pages/about.html">Đọc câu chuyện của tôi</a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </div>
-</section>
+        <!-- ===== Dịch vụ teaser ===== -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Dịch vụ &amp; Bảng giá</p>
+                    <h2>Gói chụp cho mọi câu chuyện</h2>
+                    <p>Bốn gói Photography Package từ $399 đến $2999 — từ buổi chụp chân dung đến hôn lễ trọn ngày.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card reveal">
+                        <div class="card-body">
+                            <span class="card-meta">Từ $399</span>
+                            <h3>Chân dung &amp; Đính hôn</h3>
+                            <p>Buổi chụp 2 giờ tại địa điểm bạn chọn, phù hợp ảnh đính hôn, kỷ niệm và chân dung cô dâu.</p>
+                        </div>
+                    </article>
+                    <article class="card reveal reveal-delay-1">
+                        <div class="card-body">
+                            <span class="card-meta">Từ $1999</span>
+                            <h3>Hôn lễ trọn ngày</h3>
+                            <p>Theo chân hai bạn từ lúc chuẩn bị đến điệu nhảy cuối cùng, kèm album online đầy đủ.</p>
+                        </div>
+                    </article>
+                    <article class="card reveal reveal-delay-2">
+                        <div class="card-body">
+                            <span class="card-meta">$2999</span>
+                            <h3>Signature Collection</h3>
+                            <p>Trọn gói cao cấp nhất: hai nhiếp ảnh gia, album in thủ công và buổi chụp đính hôn tặng kèm.</p>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align: center; margin-top: 36px;" class="reveal">
+                    <a class="btn btn-primary" href="pages/services.html">Xem bảng giá chi tiết</a>
+                </div>
+            </div>
+        </section>
 
+        <!-- ===== CTA ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Sẵn sàng cho ngày trọng đại?</p>
+                    <h2>Hãy cùng kể câu chuyện của bạn</h2>
+                    <p>Lịch mùa cưới 2026–2027 đang mở. Gửi lời nhắn để nhận báo giá và kiểm tra ngày trống.</p>
+                    <a class="btn btn-gold" href="pages/contact.html">Liên hệ ngay</a>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- ===== Footer (đồng bộ toàn site) ===== -->
     <footer class="site-footer">
-        <div class="container footer-wrap">
-            <p>© <span id="year"></span> Ánh Sáng Studio. Mọi quyền được bảo lưu.</p>
-            <div class="footer-links">
-                <a href="pages/contact.html">Liên hệ</a>
-                <a href="pages/booking.html">Đặt lịch</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Tessa Morgan</span>
+                    <p>Nhiếp ảnh gia cưới tại Santa Monica, California. Nhận chụp toàn bang và điểm đến quốc tế.</p>
+                </div>
+                <div>
+                    <h4>Khám phá</h4>
+                    <ul>
+                        <li><a href="pages/portfolio.html">Bộ sưu tập</a></li>
+                        <li><a href="pages/services.html">Dịch vụ &amp; Bảng giá</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/about.html">Giới thiệu</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li><a href="mailto:hello@tessamorgan.com">hello@tessamorgan.com</a></li>
+                        <li><a href="tel:+13105550137">+1 (310) 555-0137</a></li>
+                        <li>Santa Monica, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> Tessa Morgan Photography.</span>
+                <span>Đ12 — Portfolio nhiếp ảnh cưới</span>
             </div>
         </div>
     </footer>
