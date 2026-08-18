@@ -1,4 +1,5 @@
 @media (max-width: 900px) {
+
     .hero-grid,
     .story-grid,
     .booking-grid,
@@ -8,6 +9,8 @@
     .card-grid {
         grid-template-columns: 1fr;
     }
+
+
 
     .cta-box,
     .footer-wrap {
