@@ -6,17 +6,14 @@
       "category": "Wedding",
       "location": "Napa Valley, California",
       "date": "2026-05-16",
-      "cover": "images/image_1.jpg",
-      "coverWidth": 1125,
-      "coverHeight": 750,
+      "cover": "images/W1.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
       "description": "Một hôn lễ ngập tràn nắng vàng giữa vườn nho Napa Valley. Amelia và James trao lời thề dưới giàn hoa trắng, khép lại bằng điệu nhảy đầu tiên lúc hoàng hôn.",
       "images": [
-        { "src": "images/image_1.jpg", "alt": "Cô dâu và chú rể trao lời thề dưới giàn hoa trắng", "width": 1125, "height": 750 },
-        { "src": "images/image_4.webp", "alt": "Chân dung cô dâu với bó hoa cưới tông pastel", "width": 1698, "height": 2560 },
-        { "src": "images/image_3.webp", "alt": "Khoảnh khắc trao nhẫn trong lễ đường ngoài trời", "width": 2048, "height": 1365 },
-        { "src": "images/image_6.webp", "alt": "Chi tiết nhẫn cưới đặt trên hoa", "width": 750, "height": 750 },
-        { "src": "images/image_7.jpg", "alt": "Toàn cảnh tiệc cưới ngoài trời lúc hoàng hôn", "width": 1290, "height": 643 },
-        { "src": "images/image_2.jpg", "alt": "Điệu nhảy đầu tiên của đôi uyên ương", "width": 750, "height": 500 }
+        { "src": "images/W1.jpg", "alt": "Cô dâu và chú rể trao lời thề dưới giàn hoa trắng", "width": 1000, "height": 1000 },
+        { "src": "images/W2.jpg", "alt": "Chân dung cô dâu với bó hoa cưới tông pastel", "width": 1000, "height": 1000 },
+        { "src": "images/W3.jpg", "alt": "Khoảnh khắc trao nhẫn trong lễ đường ngoài trời", "width": 1000, "height": 1000 }
       ]
     },
     {
@@ -25,16 +22,14 @@
       "category": "Wedding",
       "location": "Big Sur, California",
       "date": "2026-04-02",
-      "cover": "images/image_3.webp",
-      "coverWidth": 2048,
-      "coverHeight": 1365,
+      "cover": "images/W2.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
       "description": "Hôn lễ bên vách đá Big Sur với tiếng sóng làm nhạc nền. Sofia và Daniel chọn một buổi lễ thân mật chỉ với gia đình và những người bạn thân thiết nhất.",
       "images": [
-        { "src": "images/image_3.webp", "alt": "Lễ cưới bên bờ biển với vòm hoa trắng", "width": 2048, "height": 1365 },
-        { "src": "images/image_2.jpg", "alt": "Cô dâu chú rể dạo bước trên bãi biển", "width": 750, "height": 500 },
-        { "src": "images/image_5.jpeg", "alt": "Nụ hôn đầu tiên sau lời tuyên bố", "width": 1024, "height": 683 },
-        { "src": "images/image_4.webp", "alt": "Váy cưới tung bay trong gió biển", "width": 1698, "height": 2560 },
-        { "src": "images/image_6.webp", "alt": "Bàn tiệc trang trí hoa và nến", "width": 750, "height": 750 }
+        { "src": "images/W2.jpg", "alt": "Lễ cưới bên bờ biển với vòm hoa trắng", "width": 1000, "height": 1000 },
+        { "src": "images/W3.jpg", "alt": "Cô dâu chú rể dạo bước trên bãi biển", "width": 1000, "height": 1000 },
+        { "src": "images/W1.jpg", "alt": "Nụ hôn đầu tiên sau lời tuyên bố", "width": 1000, "height": 1000 }
       ]
     },
     {
@@ -43,16 +38,14 @@
       "category": "Engagement",
       "location": "Malibu Hills, California",
       "date": "2026-03-14",
-      "cover": "images/image_5.jpeg",
-      "coverWidth": 1024,
-      "coverHeight": 683,
+      "cover": "images/E1.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
       "description": "Buổi chụp đính hôn lúc giờ vàng trên đồi Malibu. Ánh nắng cuối ngày ôm trọn hai người trong khung cảnh cỏ cháy vàng óng.",
       "images": [
-        { "src": "images/image_5.jpeg", "alt": "Cặp đôi nắm tay nhau dưới ánh nắng giờ vàng", "width": 1024, "height": 683 },
-        { "src": "images/image_7.jpg", "alt": "Toàn cảnh đồi cỏ vàng lúc hoàng hôn", "width": 1290, "height": 643 },
-        { "src": "images/image_2.jpg", "alt": "Nụ cười rạng rỡ của cặp đôi mới đính hôn", "width": 750, "height": 500 },
-        { "src": "images/image_6.webp", "alt": "Cận cảnh nhẫn đính hôn kim cương", "width": 750, "height": 750 },
-        { "src": "images/image_1.jpg", "alt": "Cặp đôi khiêu vũ giữa đồng cỏ", "width": 1125, "height": 750 }
+        { "src": "images/E1.jpg", "alt": "Cặp đôi nắm tay nhau dưới ánh nắng giờ vàng", "width": 1000, "height": 1000 },
+        { "src": "images/E2.jpg", "alt": "Toàn cảnh đồi cỏ vàng lúc hoàng hôn", "width": 1000, "height": 1000 },
+        { "src": "images/E3.jpg", "alt": "Nụ cười rạng rỡ của cặp đôi mới đính hôn", "width": 1000, "height": 1000 }
       ]
     },
     {
@@ -61,16 +54,14 @@
       "category": "Engagement",
       "location": "Downtown Los Angeles, California",
       "date": "2026-02-08",
-      "cover": "images/image_2.jpg",
-      "coverWidth": 750,
-      "coverHeight": 500,
+      "cover": "images/E2.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
       "description": "Buổi chụp đính hôn giữa lòng thành phố về đêm — ánh đèn neon, những con phố vắng và hai trái tim đang yêu.",
       "images": [
-        { "src": "images/image_2.jpg", "alt": "Cặp đôi dạo phố đêm dưới ánh đèn thành phố", "width": 750, "height": 500 },
-        { "src": "images/image_6.webp", "alt": "Khoảnh khắc cầu hôn bất ngờ trên sân thượng", "width": 750, "height": 750 },
-        { "src": "images/image_5.jpeg", "alt": "Cái ôm ấm áp giữa quảng trường", "width": 1024, "height": 683 },
-        { "src": "images/image_7.jpg", "alt": "Đường chân trời thành phố lúc chạng vạng", "width": 1290, "height": 643 },
-        { "src": "images/image_3.webp", "alt": "Cặp đôi cười đùa trong quán cà phê", "width": 2048, "height": 1365 }
+        { "src": "images/E2.jpg", "alt": "Cặp đôi dạo phố đêm dưới ánh đèn thành phố", "width": 1000, "height": 1000 },
+        { "src": "images/E3.jpg", "alt": "Khoảnh khắc cầu hôn bất ngờ trên sân thượng", "width": 1000, "height": 1000 },
+        { "src": "images/E1.jpg", "alt": "Cái ôm ấm áp giữa quảng trường", "width": 1000, "height": 1000 }
       ]
     },
     {
@@ -79,15 +70,14 @@
       "category": "Portrait",
       "location": "Tessa Morgan Studio, Santa Monica",
       "date": "2026-01-20",
-      "cover": "images/image_4.webp",
-      "coverWidth": 1698,
-      "coverHeight": 2560,
+      "cover": "images/P1.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
       "description": "Bộ chân dung cô dâu trong studio với ánh sáng cửa sổ tự nhiên. Isabella diện chiếc váy cưới ren cổ điển được truyền lại từ bà ngoại.",
       "images": [
-        { "src": "images/image_4.webp", "alt": "Chân dung cô dâu bên khung cửa sổ ngập nắng", "width": 1698, "height": 2560 },
-        { "src": "images/image_6.webp", "alt": "Cận cảnh chi tiết ren trên váy cưới", "width": 750, "height": 750 },
-        { "src": "images/image_1.jpg", "alt": "Cô dâu xoay váy giữa studio", "width": 1125, "height": 750 },
-        { "src": "images/image_5.jpeg", "alt": "Ánh mắt trầm tư của cô dâu trước giờ lễ", "width": 1024, "height": 683 }
+        { "src": "images/P1.jpg", "alt": "Chân dung cô dâu bên khung cửa sổ ngập nắng", "width": 1000, "height": 1000 },
+        { "src": "images/P2.jpg", "alt": "Cận cảnh chi tiết ren trên váy cưới", "width": 1000, "height": 1000 },
+        { "src": "images/P3.jpg", "alt": "Cô dâu xoay váy giữa studio", "width": 1000, "height": 1000 }
       ]
     },
     {
@@ -96,16 +86,14 @@
       "category": "Portrait",
       "location": "Pasadena, California",
       "date": "2025-12-06",
-      "cover": "images/image_6.webp",
-      "coverWidth": 750,
-      "coverHeight": 750,
+      "cover": "images/P2.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
       "description": "Bộ ảnh chân dung gia đình ba thế hệ nhà Everett — những khung hình được chụp để trở thành kỷ vật truyền đời.",
       "images": [
-        { "src": "images/image_6.webp", "alt": "Chân dung gia đình ba thế hệ trong vườn", "width": 750, "height": 750 },
-        { "src": "images/image_2.jpg", "alt": "Ông bà nắm tay nhau trên băng ghế gỗ", "width": 750, "height": 500 },
-        { "src": "images/image_5.jpeg", "alt": "Các cháu nhỏ chơi đùa trên thảm cỏ", "width": 1024, "height": 683 },
-        { "src": "images/image_7.jpg", "alt": "Toàn cảnh khu vườn nơi diễn ra buổi chụp", "width": 1290, "height": 643 },
-        { "src": "images/image_3.webp", "alt": "Khoảnh khắc cả nhà cùng cười", "width": 2048, "height": 1365 }
+        { "src": "images/P2.jpg", "alt": "Chân dung gia đình ba thế hệ trong vườn", "width": 1000, "height": 1000 },
+        { "src": "images/P3.jpg", "alt": "Ông bà nắm tay nhau trên băng ghế gỗ", "width": 1000, "height": 1000 },
+        { "src": "images/P1.jpg", "alt": "Các cháu nhỏ chơi đùa trên thảm cỏ", "width": 1000, "height": 1000 }
       ]
     }
   ]
