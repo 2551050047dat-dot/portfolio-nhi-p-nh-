@@ -1,0 +1,100 @@
+{
+  "albums": [
+    {
+      "id": "amelia-james-vineyard",
+      "title": "Amelia & James — Vineyard Wedding",
+      "category": "Wedding",
+      "location": "Napa Valley, California",
+      "date": "2026-05-16",
+      "cover": "images/W1.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
+      "description": "Một hôn lễ ngập tràn nắng vàng giữa vườn nho Napa Valley. Amelia và James trao lời thề dưới giàn hoa trắng, khép lại bằng điệu nhảy đầu tiên lúc hoàng hôn.",
+      "images": [
+        { "src": "images/W1.jpg", "alt": "Cô dâu và chú rể trao lời thề dưới giàn hoa trắng", "width": 1000, "height": 1000 },
+        { "src": "images/W2.jpg", "alt": "Chân dung cô dâu với bó hoa cưới tông pastel", "width": 1000, "height": 1000 },
+        { "src": "images/W3.jpg", "alt": "Khoảnh khắc trao nhẫn trong lễ đường ngoài trời", "width": 1000, "height": 1000 }
+      ]
+    },
+    {
+      "id": "sofia-daniel-coastal",
+      "title": "Sofia & Daniel — Coastal Ceremony",
+      "category": "Wedding",
+      "location": "Big Sur, California",
+      "date": "2026-04-02",
+      "cover": "images/W2.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
+      "description": "Hôn lễ bên vách đá Big Sur với tiếng sóng làm nhạc nền. Sofia và Daniel chọn một buổi lễ thân mật chỉ với gia đình và những người bạn thân thiết nhất.",
+      "images": [
+        { "src": "images/W2.jpg", "alt": "Lễ cưới bên bờ biển với vòm hoa trắng", "width": 1000, "height": 1000 },
+        { "src": "images/W3.jpg", "alt": "Cô dâu chú rể dạo bước trên bãi biển", "width": 1000, "height": 1000 },
+        { "src": "images/W1.jpg", "alt": "Nụ hôn đầu tiên sau lời tuyên bố", "width": 1000, "height": 1000 }
+      ]
+    },
+    {
+      "id": "harper-liam-golden-hour",
+      "title": "Harper & Liam — Golden Hour Engagement",
+      "category": "Engagement",
+      "location": "Malibu Hills, California",
+      "date": "2026-03-14",
+      "cover": "images/E1.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
+      "description": "Buổi chụp đính hôn lúc giờ vàng trên đồi Malibu. Ánh nắng cuối ngày ôm trọn hai người trong khung cảnh cỏ cháy vàng óng.",
+      "images": [
+        { "src": "images/E1.jpg", "alt": "Cặp đôi nắm tay nhau dưới ánh nắng giờ vàng", "width": 1000, "height": 1000 },
+        { "src": "images/E2.jpg", "alt": "Toàn cảnh đồi cỏ vàng lúc hoàng hôn", "width": 1000, "height": 1000 },
+        { "src": "images/E3.jpg", "alt": "Nụ cười rạng rỡ của cặp đôi mới đính hôn", "width": 1000, "height": 1000 }
+      ]
+    },
+    {
+      "id": "chloe-noah-city-lights",
+      "title": "Chloe & Noah — City Lights Engagement",
+      "category": "Engagement",
+      "location": "Downtown Los Angeles, California",
+      "date": "2026-02-08",
+      "cover": "images/E2.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
+      "description": "Buổi chụp đính hôn giữa lòng thành phố về đêm — ánh đèn neon, những con phố vắng và hai trái tim đang yêu.",
+      "images": [
+        { "src": "images/E2.jpg", "alt": "Cặp đôi dạo phố đêm dưới ánh đèn thành phố", "width": 1000, "height": 1000 },
+        { "src": "images/E3.jpg", "alt": "Khoảnh khắc cầu hôn bất ngờ trên sân thượng", "width": 1000, "height": 1000 },
+        { "src": "images/E1.jpg", "alt": "Cái ôm ấm áp giữa quảng trường", "width": 1000, "height": 1000 }
+      ]
+    },
+    {
+      "id": "isabella-bridal-portrait",
+      "title": "Isabella — Bridal Portrait Session",
+      "category": "Portrait",
+      "location": "Tessa Morgan Studio, Santa Monica",
+      "date": "2026-01-20",
+      "cover": "images/P1.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
+      "description": "Bộ chân dung cô dâu trong studio với ánh sáng cửa sổ tự nhiên. Isabella diện chiếc váy cưới ren cổ điển được truyền lại từ bà ngoại.",
+      "images": [
+        { "src": "images/P1.jpg", "alt": "Chân dung cô dâu bên khung cửa sổ ngập nắng", "width": 1000, "height": 1000 },
+        { "src": "images/P2.jpg", "alt": "Cận cảnh chi tiết ren trên váy cưới", "width": 1000, "height": 1000 },
+        { "src": "images/P3.jpg", "alt": "Cô dâu xoay váy giữa studio", "width": 1000, "height": 1000 }
+      ]
+    },
+    {
+      "id": "evelyn-family-portrait",
+      "title": "The Everett Family — Heirloom Portraits",
+      "category": "Portrait",
+      "location": "Pasadena, California",
+      "date": "2025-12-06",
+      "cover": "images/P2.jpg",
+      "coverWidth": 1000,
+      "coverHeight": 1000,
+      "description": "Bộ ảnh chân dung gia đình ba thế hệ nhà Everett — những khung hình được chụp để trở thành kỷ vật truyền đời.",
+      "images": [
+        { "src": "images/P2.jpg", "alt": "Chân dung gia đình ba thế hệ trong vườn", "width": 1000, "height": 1000 },
+        { "src": "images/P3.jpg", "alt": "Ông bà nắm tay nhau trên băng ghế gỗ", "width": 1000, "height": 1000 },
+        { "src": "images/P1.jpg", "alt": "Các cháu nhỏ chơi đùa trên thảm cỏ", "width": 1000, "height": 1000 }
+      ]
+    }
+  ]
+}
